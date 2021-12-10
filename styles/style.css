@@ -17,11 +17,25 @@ body {
 }
 
 /* TYPOGRAPHY */
+nav ul {
+  font-size: 0.6rem;
+}
+.left-nav a,
+.right-nav a {
+  color: black;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
 p {
   font-size: 0.6rem;
 }
 .about h2 {
-  font-size: .8rem;
+  font-size: .6rem;
   font-weight: normal;
 }
 .about p {
@@ -107,8 +121,10 @@ p {
 }
 
 h1 {
+  font-size: 1.3rem;
   display: flex;
   justify-content: center;
+  letter-spacing: 0.9px;
 }
 
   /* BRANDING DESIGN */
@@ -144,12 +160,19 @@ h1 {
 .branding-design-column-parent {
   display: flex;
 }
+.branding-design-column-parent h3 {
+  font-size: 0.7rem;
+  font-weight: normal;
+}
 
 .branding-column {
   display: flex;
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  padding-left: 3rem;
+  padding-right: 1rem;
+  padding-top: 2rem;  
 }
 
 .design-column {
@@ -157,6 +180,9 @@ h1 {
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  padding-left: 3rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
 }
 
 /* BLOG */
@@ -176,9 +202,10 @@ h1 {
 .blog-flex i {
   font-size: 1.5rem;
 }
-.blog-text {
+.blog-text p {
   text-align: center;
-  padding: 2rem 3rem 5rem 3rem;
+  padding: 2rem 6rem 5rem 6rem;
+  line-height: 1rem;
 }
 .fa-angle-left {
   width: 50%;
@@ -254,6 +281,8 @@ h1 {
   display: flex;
   justify-content: center;
   padding: 5rem 0 3rem 0;
+  font-size: 0.8rem;
+  font-weight: lighter;
 }
 .grey-box {
   display: flex;
@@ -326,15 +355,27 @@ h1 {
 }
 .green-box p {
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 7rem;
+  text-align: center;
 }
 .green-box h2 {
   display: flex;
   justify-content: center;
+  font-size: 0.8rem;
+  font-weight: lighter;
 }
 .portfolio-button {
   display: flex;
   justify-content: center;
+}
+.portfolio-button button {
+  padding: 0.6rem;
+  font-size: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  border-style: none;
+  background-color: white;
+  color: black;
 }
 .portfolio-picture {
   width: 50%;
@@ -352,6 +393,9 @@ h1 {
   display: flex;
   padding-top: 5rem;
 }
+.contact-flex h4 {
+  font-weight: normal;
+}
 .contact-column p {
   padding-bottom: 0.2rem;
 }
@@ -360,7 +404,7 @@ h1 {
   margin-left: 3rem;
 }
 .recent-posts p {
-  padding-bottom: 0.2rem;
+  padding-bottom: 0.3rem;
 }
 .recent-posts h4 {
   margin-left: 1rem;
@@ -386,6 +430,10 @@ h1 {
 .sign-up p {
   padding-bottom: 1rem;
 }
+.sign-up button {
+  background-color: #c3dab7;
+  color: black;
+}
 
 form {
   display: flex;
@@ -406,7 +454,8 @@ form {
 .brown-box {
   background-color: #333333;
   color: #f6f6f6;
-  border-top: dimgrey solid 0.05rem;
+  border-top: solid 0.05rem;
+  border-color: rgb(235, 230, 230);
   display: flex;
   justify-content: center;
   padding: 2.5rem;
@@ -421,7 +470,7 @@ footer p {
 /******* BLOG PAGE ******/
 
 /* HEADER */
-.imac {
+.blog-hero {
   background-image: url(/Users/MarkHegarty/Sites/project-folder/mark-hegarty-project-one/assets/blog-1.jpeg);
   height: 90vh;
   background-size: cover;
@@ -429,19 +478,398 @@ footer p {
   object-fit: contain;
   background-position: center;
 }
-.how-to h2{
+
+/* HOW TO */
+.pages a {
+  color: rgb(185, 185, 185);
+}
+.how-to h2 {
   font-size: 2rem;
   display: flex;
   justify-content: center;
   padding-top: 5rem;
+  padding-bottom: 0.5rem;
+}
+.alex-flex {
+  padding-top: 3rem;
+  display: flex;
+  width: 50%;
+}
+.alex-column {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-top: .6rem;
+}
+.alex-flex img {
+  border-radius: 100%;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.alex-flex h3 {
+  font-weight: normal;
+  font-size: 0.7rem;
+  margin: 0;
+  padding-bottom: 0.25rem;
+}
+.date {
+  display: flex;
+  flex-direction: column;
+  width: 4rem;
+}
+.category{
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+.tags {
+  display: flex;
+  flex-direction: column;
+}
+
+.date-flex {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+.date-flex h3 {
+  font-size: 0.7rem;
+  font-weight: normal;
+  margin: 3.4rem 0 0.3rem 0;
+}
+.alex-text {
+  padding-top: 3rem;
+}
+.alex-text p {
+  font-size: 0.55rem;
+  padding: 0.5rem 0;
+}
+.alex-flex-all {
+  display: flex;
+}
+
+.share-flex {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+}
+.fa-twitter {
+  padding: 0 0.5rem;
+}
+.social-media-icons {
+  font-size: 0.6rem;
+}
+
+.share-flex p {
+  padding-right: 0.5rem;
+}
+
+/* RELATED POSTS */
+.related-posts h2 {
+  font-size: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 0.5rem;
+}
+.related-posts-gallery {
+  padding-top: 1.5rem;
+  border-top: solid 0.05rem;
+  border-color: rgb(235, 230, 230);
+}
+.related-posts-gallery li{
+  width: calc(100% / 3 - 0.60rem);
+}
+.related-posts-gallery ul {
+  display: flex;
+  justify-content: space-between;
+}
+.july-flex {
+  display: flex;
+  padding-bottom: 3rem;
+}
+.july-flex p {
+  padding-right: 10rem;
+  padding-top: 0.7rem;
+}
+/* COMMENTS */
+.comments h2 {
+  font-size: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: solid 0.05rem;
+  border-color: rgb(235, 230, 230);
+}
+.daniel {
+  display: flex;
+}
+.comment-box-one {
+  margin-left: 1rem;
+  padding: 0.5rem 0 1rem 0.5rem;
+  background-color: #f6f6f6;
+  width: 95%;
+  height: 4.5rem;
+  
+}
+.comment-box-one p {
+  padding-bottom: 0.5rem
+}
+.comments-flex {
+  margin-top: 1.5rem;
+  
+}
+.daniel img {
+  width: 2.4rem;
+}
+
+.jennifer {
+  display: flex;
+  margin-top: 1rem;
+}
+.jennifer img {
+  width: 2.4rem;
+}
+
+.leave-comment h2{
+  margin-top: 3rem;
+}
+
+.comment-info {
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+.enter-name,
+.email-box,
+.subject {
+  width: 12rem;
+  padding-top: 1rem;
+  padding-bottom: 0.3rem;
+}
+.comment-here {
+  font-size: 0.6rem;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+}
+.comment-button button {
+  padding: 2rem 0 0.3rem 0;
+  font-size: 0.5rem;
+  background-color: white;
+  border-style: none;
+  border-bottom: solid 0.05rem;
+  border-color: rgb(175, 175, 175);
+}
+.comment-button a {
+  color: black;
+}
+.comment-button {
+  margin-bottom: 6rem;
+}
+
+input {
+  border-style: none;
+  border-bottom: solid 0.05rem;
+  border-color: rgb(235, 230, 230);
+}
+
+/***** CONTACT PAGE *****/
+
+/* HEADER */
+.contact-hero {
+  background-image: url(/Users/MarkHegarty/Sites/project-folder/mark-hegarty-project-one/assets/contact-1.jpeg);
+  background-size: cover;
+  max-width: 100%;
+  object-fit: contain;
+  background-position: center;
+  height: 7.5rem;
+  padding-top: 4rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.contact-hero span {
+  display: block;
+}
+.contact-details h3 {
+  padding-top: 4rem;
+}
+.contact-text {
+  width: 50%;
+}
+
+/* CONTACT DETAILS */
+.contact-details h3 {
+  font-size: 0.7rem;
+}
+.contact-details-column {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+.email-column {
+  display: flex;
+flex-direction: column;
+}
+.email-column a {
+  font-size: 0.6rem;
+  color: black;
+}
+.phone-column,
+.address-column,
+.email-column {
+  padding-left: 3rem;
+}
+
+/* GET IN TOUCH */
+.get-in-touch h3 {
+  padding-top: 1rem;
+  font-size: 0.7rem;
+}
+.get-in-touch p {
+  padding-bottom: 3rem;
 }
 
 
+.message-button button {
+  padding: 2rem 0 0.3rem 0;
+  font-size: 0.5rem;
+  background-color: white;
+  border-style: none;
+  border-bottom: solid 0.05rem;
+  border-color: rgb(175, 175, 175);
+}
+.message-button {
+  margin-bottom: 6rem;
+}
 
-
-
+/* MEDIA QUERIES */
 @media (max-width:1279px) {
   .circle {
+    display: none;
+  }
+  .july-flex p {
+    display: none;
+    padding: 0;
+  }
+}
+@media (max-width:1100px) {
+  h1 {
+    padding-top: 10rem;
+  }
+  .blog-text p {
+    padding: 2rem 0rem 5rem 0rem;
+  }
+  .about {
+    display: none;
+  }
+  .top-gallery li {
+    width: 100%;
+  }
+  .suit {
+    margin: 0;
+  }
+  .suit img {
+    width: 100%;
+    margin: 0;
+  }
+  .blondy img {
+    width: 100%;
+  }
+  .top-gallery {
+    display: block;
+    justify-content: center;
+  }
+  .top-gallery ul {
+    display: flex;
+  }
+  .grey-box,
+  .grey-box h3 {
+    width: 80%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: white;
+  }
+  .bottom-gallery {
+    display: block;
+  }
+  .bottom-gallery ul {
+    display: flex;
+  }
+  .black-shirt {
+    margin: 0;
+  }
+  .white-box {
+    width: 100%;
+  }
+  .team h2 {
+    padding: 0;
+    padding-bottom: 2rem;
+  }
+  .contact-flex {
+    margin: 0 auto;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact-column {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .contact-column h4 {
+    margin-top: 4rem;
+  }
+  .recent-posts {
+    margin: 0;
+    padding: 0;
+  }
+  .sign-up {
+    margin: 0;
+    padding: 0;
+  }
+  .sign-up h4,
+  .sign-up p {
+    flex-direction: row;
+  }
+  .green-box p {
+    padding: 2rem 1rem;
+  }
+
+  /* BLOG PAGE */
+  .date-flex {
+    flex-direction: column;
+  }
+  .category {
+    padding: 0;
+  }
+  .alex-flex-all {
+    display: block;
+  }
+  .comment-info {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 870px) {
+  .left-nav,
+  .right-nav {
+    flex-direction: column;
+  }
+  .left-nav li,
+  .right-nav li {
+    padding-bottom: 0.5rem;
+  }
+  .branding-design-column-parent {
+    flex-direction: column;
+  }
+  .branding-column,
+  .design-column {
+    padding-top: 0.5rem;
+  }
+  .comment-box-one {
+    height: 5.8rem;
+  }
+  .contact-hero h2 {
     display: none;
   }
 }
